@@ -1,37 +1,109 @@
-# 🎓 AI-Driven Student Performance Prediction System
+# AI-Driven Student Performance Prediction System
 
-## 📌 About the Project
+## 📌 Project Overview
 
-This project uses Machine Learning to predict student performance based on academic factors such as attendance, study hours, previous marks, assignments, and internal assessments.
+The AI-Driven Student Performance Prediction System is a Machine Learning project that predicts a student's expected final marks based on academic factors.
 
-## 🎯 Objective
+The system uses student information such as attendance, study hours, previous examination marks, assignment marks, and internal assessment marks to predict final performance.
 
-To analyze student data and predict expected final marks using Machine Learning.
+## 🎯 Objectives
 
-## 🤖 Technologies Used
+* Predict expected student final marks.
+* Analyze important academic factors.
+* Classify student performance.
+* Provide a simple web interface for prediction.
+* Help identify students who may need academic improvement.
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
+## 🧠 Machine Learning Algorithm
 
-## 📊 Features
+The project uses **Linear Regression** to predict final marks.
 
-- Student Performance Prediction
-- Machine Learning Model
-- Data Analysis
-- Prediction Output
+### Input Features
+
+* Attendance
+* Study Hours
+* Previous Exam Marks
+* Assignment Marks
+* Internal Assessment Marks
+
+### Output
+
+* Predicted Final Marks
+* Performance Category
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Streamlit
 
 ## 📂 Project Files
 
-- app.py
-- generate_dataset.py
-- train_model.py
-- student_performance.csv
-- student_model.pkl
+| File                      | Description                                     |
+| ------------------------- | ----------------------------------------------- |
+| `app.py`                  | Streamlit web application                       |
+| `generate_dataset.py`     | Generates the student dataset                   |
+| `train_model.py`          | Trains and evaluates the Machine Learning model |
+| `student_performance.csv` | Student performance dataset                     |
+| `student_model.pkl`       | Trained Machine Learning model                  |
+| `requirements.txt`        | Required Python libraries                       |
 
-## 👨‍💻 Author
+## 🔄 Project Workflow
 
-Aditya Raj
+```text
+Student Data
+     ↓
+Data Preparation
+     ↓
+Machine Learning Model
+     ↓
+Linear Regression
+     ↓
+Prediction
+     ↓
+Performance Classification
+```
 
-CSE (Artificial Intelligence) Student
+## ▶️ How to Run the Project
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in a web browser.
+
+## 📊 Performance Categories
+
+| Predicted Marks | Performance       |
+| --------------- | ----------------- |
+| 85–100          | Excellent         |
+| 70–84           | Good              |
+| 50–69           | Average           |
+| Below 50        | Needs Improvement |
+
+## 🌐 Project Links
+
+**GitHub Repository:**
+https://github.com/meetadityaraj/student-performance-prediction
+
+**Live Demo:**
+https://student-performance-prediction-fesjjq5jyenpd3tzq4l88d.streamlit.app/
+
+## 👩‍💻 Project Type
+
+Academic / Machine Learning Project
+
+## 📜 Conclusion
+
+This project demonstrates how Machine Learning can be used to analyze student academic information and predict expected performance. The Streamlit interface makes the prediction system simple and easy to use.
